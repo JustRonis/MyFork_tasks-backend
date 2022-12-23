@@ -55,7 +55,7 @@ pipeline {
             steps {
                 dir('functional-test') {
                     git credentialsId: 'github_login', url: 'https://github.com/wcaquino/tasks-functional-tests'
-                    bat 'mvn test'
+                    
                 }
             }
         }
