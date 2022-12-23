@@ -53,7 +53,7 @@ pipeline {
         stage ('Functional Test') {
             steps {
                 dir('functional-test') {
-                    git credentialsId: 'github_login', url: 'https://github.com/wcaquino/tasks-functional-tests'                 
+                    git credentialsId: 'GitHub_Login', url: 'https://github.com/JustRonis/tasks-functional-tests'                 
                 }
             }
         }
