@@ -38,7 +38,7 @@ pipeline {
             steps {
                 dir('api-test') {
                     git credentialsId: 'GitHub_Login', url: 'https://github.com/JustRonis/tasks-api'
-                    bat 'mvn test'
+                    
                 }
             }
         }
